@@ -1,0 +1,2 @@
+dot-local-share-nvim/mason/packages/cpptools/extension/LLVM/bin/clang-tidy filter=lfs diff=lfs merge=lfs -text
+dot-local-share-nvim/mason/packages/clangd/clangd_19.1.0/bin/clangd filter=lfs diff=lfs merge=lfs -text
