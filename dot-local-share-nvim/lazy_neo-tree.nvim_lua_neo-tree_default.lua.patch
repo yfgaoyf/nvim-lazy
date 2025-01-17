@@ -1,0 +1,46 @@
+diff --git a/lua/neo-tree/defaults.lua b/lua/neo-tree/defaults.lua
+index cbd30c7..a3dbfba 100644
+--- a/lua/neo-tree/defaults.lua
++++ b/lua/neo-tree/defaults.lua
+@@ -474,11 +474,12 @@ local config = {
+       force_visible_in_empty_folder = false, -- when true, hidden files will be shown if the root folder is otherwise empty
+       show_hidden_count = true, -- when true, the number of hidden items in each folder will be shown as the last entry
+       hide_dotfiles = true,
+-      hide_gitignored = true,
++      hide_gitignored = false,
+       hide_hidden = true, -- only works on Windows for hidden files/directories
+       hide_by_name = {
+         ".DS_Store",
+-        "thumbs.db"
++        "thumbs.db",
++        ".cache"
+         --"node_modules",
+       },
+       hide_by_pattern = { -- uses glob style patterns
+@@ -487,6 +488,7 @@ local config = {
+       },
+       always_show = { -- remains visible even if other settings would normally hide it
+         --".gitignored",
++        'out'
+       },
+       always_show_by_pattern = { -- uses glob style patterns
+         --".env*",
+@@ -494,9 +496,18 @@ local config = {
+       never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+         --".DS_Store",
+         --"thumbs.db"
++        'lib',
++        'bes2600',
++        'hifi4',
++        '.git',
++        '.cache',
++        '.repo'
+       },
+       never_show_by_pattern = { -- uses glob style patterns
+         --".null-ls_*",
++        "*.xml",
++        "*.gz",
++        "*.log"
+       },
+     },
+     find_by_full_path_words = false,  -- `false` means it only searches the tail of a path.

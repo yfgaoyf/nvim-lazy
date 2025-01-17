@@ -1,0 +1,8 @@
+web-tools-commands	web-tools.txt	/*web-tools-commands*
+web-tools-contents	web-tools.txt	/*web-tools-contents*
+web-tools-install	web-tools.txt	/*web-tools-install*
+web-tools-install_browser_sync	web-tools.txt	/*web-tools-install_browser_sync*
+web-tools-lsp_for_html_&_cssls	web-tools.txt	/*web-tools-lsp_for_html_&_cssls*
+web-tools-plug	web-tools.txt	/*web-tools-plug*
+web-tools-setup	web-tools.txt	/*web-tools-setup*
+web-tools-web-tools.nvim	web-tools.txt	/*web-tools-web-tools.nvim*

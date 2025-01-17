@@ -1,0 +1,17 @@
+diff --git a/lua/lazyvim/plugins/extras/editor/telescope.lua b/lua/lazyvim/plugins/extras/editor/telescope.lua
+index 11cfef1..58234db 100644
+--- a/lua/lazyvim/plugins/extras/editor/telescope.lua
++++ b/lua/lazyvim/plugins/extras/editor/telescope.lua
+@@ -167,9 +167,10 @@ return {
+ 
+       local function find_command()
+         if 1 == vim.fn.executable("rg") then
+-          return { "rg", "--files", "--color", "never", "-g", "!.git" }
++          -- return { "rg", "--files", "--color", "never", "-g", "!*.o", "-g","!*.png","-g", "!*prebuilts*", "-g", "!.git", "-g", "!.cache","--no-ignore-vcs" }
++          return { "rg", "--files", "--color", "never", "-g", "!*.{png,o,der,d}","-g", "!{prebuilts,.git,.cache,.repo,.gitignore}","--no-ignore-vcs" }
+         elseif 1 == vim.fn.executable("fd") then
+-          return { "fd", "--type", "f", "--color", "never", "-E", ".git" }
++          return { "fd", "--type", "f", "--color", "never", "-E", ".git", "-E", ".cache" , "--no-ignore-vcs"}
+         elseif 1 == vim.fn.executable("fdfind") then
+           return { "fdfind", "--type", "f", "--color", "never", "-E", ".git" }
+         elseif 1 == vim.fn.executable("find") and vim.fn.has("win32") == 0 then

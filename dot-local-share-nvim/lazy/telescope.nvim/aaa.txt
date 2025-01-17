@@ -1,0 +1,2 @@
+ M lua/telescope/config.lua
+/home/p-gaoyanfeng/.local/share/nvim/lazy/telescope.nvim

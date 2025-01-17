@@ -1,0 +1,1 @@
+{"metrics":{"completion_time":1729476629955,"start_time":1729476513166},"secondary_sources":[],"schema_version":"1.1","name":"clang-format","links":{"bin":{"clang-format":"venv\/bin\/clang-format"},"opt":{},"share":{}},"primary_source":{"type":"registry+v1","id":"pkg:pypi\/clang-format@19.1.2"}}

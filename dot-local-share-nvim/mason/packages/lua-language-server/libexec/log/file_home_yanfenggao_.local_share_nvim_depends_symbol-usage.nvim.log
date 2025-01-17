@@ -1,0 +1,876 @@
+[14:54:26.269][info] [#0:/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:54:26.269][info] [#0:/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:54:26.269][info] [#0:/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[14:54:26.270][info] [#0:/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[14:54:26.270][info] [#0:/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.11.1
+[14:54:26.307][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[14:54:26.307][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.246 MB
+        # 00 : 2.246 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:54:26.514][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-16" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = true,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1, 2 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = true,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "sortText", "filterText", "insertText", "textEdit", "insertTextFormat", "insertTextMode" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true,
+        rangesSupport = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      fileOperations = {
+        didRename = true,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.11.0-dev+gfae4d3fa1"
+  },
+  initializationOptions = {},
+  processId = 3330207,
+  rootPath = "/home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim",
+  rootUri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = "/home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim",
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim"
+    } }
+}
+[14:54:26.515][info] [#0:script/language.lua:137]: VSC language: nil
+[14:54:26.515][info] [#0:script/language.lua:138]: LS  language: en-us
+[14:54:26.515][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:26.515][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_home_yanfenggao_.local_share_nvim_depends_symbol-usage.nvim.log
+[14:54:26.516][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:26.921][info] [#0:script/provider/provider.lua:48]: Load config from client	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:26.921][info] [#0:script/provider/provider.lua:49]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua", "/home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua" }
+    }
+  }
+}
+[14:54:26.922][info] [#0:script/provider/provider.lua:48]: Load config from client	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:26.922][info] [#0:script/provider/provider.lua:49]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua", "/home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua" }
+    }
+  }
+}
+[14:54:26.923][info] [#0:script/provider/provider.lua:48]: Load config from client	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:26.923][info] [#0:script/provider/provider.lua:49]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua", "/home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua" }
+    }
+  }
+}
+[14:54:26.923][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:54:26.923][info] [#0:script/provider/provider.lua:64]: Load config from client	fallback
+[14:54:26.923][info] [#0:script/provider/provider.lua:65]: nil
+[14:54:26.924][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:54:26.924][info] [#0:script/provider/provider.lua:64]: Load config from client	fallback
+[14:54:26.924][info] [#0:script/provider/provider.lua:65]: nil
+[14:54:26.925][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:54:26.925][info] [#0:script/provider/provider.lua:64]: Load config from client	fallback
+[14:54:26.925][info] [#0:script/provider/provider.lua:65]: nil
+[14:54:27.050][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:27.135][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[14:54:27.298][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:27.311][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:27.314][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[14:54:27.318][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[14:54:27.318][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[14:54:27.319][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[14:54:27.319][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[14:54:27.320][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[14:54:27.320][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[14:54:27.320][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[14:54:27.321][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[14:54:27.321][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[14:54:27.321][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[14:54:27.322][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[14:54:27.322][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.340][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[14:54:27.340][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[14:54:27.340][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[14:54:27.340][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[14:54:27.341][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[14:54:27.342][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[14:54:27.342][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[14:54:27.342][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[14:54:27.342][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[14:54:27.342][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.344][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[14:54:27.344][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[14:54:27.344][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[14:54:27.344][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[14:54:27.445][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[14:54:27.445][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[14:54:27.445][info] [#0:script/workspace/workspace.lua:379]: Found 150 files at:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:27.445][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:27.447][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua
+[14:54:27.447][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.447][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[14:54:27.457][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[14:54:27.457][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[14:54:27.465][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[14:54:27.465][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.364 KB
+[14:54:27.472][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[14:54:27.472][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.699 KB
+[14:54:27.474][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[14:54:27.475][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[14:54:27.483][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[14:54:27.483][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 15.233 KB
+[14:54:27.490][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[14:54:27.490][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[14:54:27.492][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[14:54:27.492][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua , size = 5.600 KB
+[14:54:27.495][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[14:54:27.495][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[14:54:27.503][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[14:54:27.503][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.621 KB
+[14:54:27.510][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[14:54:27.510][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/logger.lua , size = 2.980 KB
+[14:54:27.513][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.513][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.327 KB
+[14:54:27.516][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[14:54:27.516][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/buf.lua , size = 2.636 KB
+[14:54:27.518][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.518][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[14:54:27.519][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[14:54:27.519][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/init.lua , size = 1.343 KB
+[14:54:27.520][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.520][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[14:54:27.527][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[14:54:27.527][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/options.lua , size = 4.576 KB
+[14:54:27.529][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.529][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[14:54:27.531][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[14:54:27.531][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/worker.lua , size = 11.398 KB
+[14:54:27.537][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.537][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/utils.lua , size = 5.978 KB
+[14:54:27.541][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.541][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.235 KB
+[14:54:27.543][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[14:54:27.543][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/state.lua , size = 1.048 KB
+[14:54:27.544][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua
+[14:54:27.545][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.310 KB
+[14:54:27.548][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[14:54:27.548][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua , size = 0.642 KB
+[14:54:27.549][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[14:54:27.549][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.109] sec: <fallback>
+[14:54:27.549][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[14:54:27.549][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[14:54:27.549][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[14:54:27.552][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.319 KB
+[14:54:27.553][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[14:54:27.554][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua , size = 1.984 KB
+[14:54:27.556][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[14:54:27.556][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua , size = 4.235 KB
+[14:54:27.562][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[14:54:27.562][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.529 KB
+[14:54:27.565][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[14:54:27.565][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua , size = 0.348 KB
+[14:54:27.565][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[14:54:27.565][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[14:54:27.566][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[14:54:27.566][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua , size = 18.123 KB
+[14:54:27.570][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[14:54:27.570][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.541 KB
+[14:54:27.571][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[14:54:27.572][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.884 KB
+[14:54:27.573][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[14:54:27.573][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua , size = 0.797 KB
+[14:54:27.573][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[14:54:27.573][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.310 KB
+[14:54:27.577][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[14:54:27.577][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua , size = 7.949 KB
+[14:54:27.582][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[14:54:27.582][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/man.lua , size = 23.961 KB
+[14:54:27.595][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.595][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/_vim9script.lua , size = 15.418 KB
+[14:54:27.603][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.603][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/editorconfig.lua , size = 11.239 KB
+[14:54:27.614][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.614][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mips64.lua , size = 0.689 KB
+[14:54:27.615][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.615][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/bcsave.lua , size = 17.090 KB
+[14:54:27.624][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.624][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/vmdef.lua , size = 7.920 KB
+[14:54:27.626][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.626][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mips64r6el.lua , size = 0.711 KB
+[14:54:27.627][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.627][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mips64r6.lua , size = 0.700 KB
+[14:54:27.627][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.627][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_ppc.lua , size = 19.825 KB
+[14:54:27.637][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.638][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mips.lua , size = 21.494 KB
+[14:54:27.650][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.650][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_x64.lua , size = 0.695 KB
+[14:54:27.650][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.650][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/zone.lua , size = 0.979 KB
+[14:54:27.651][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.651][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/bc.lua , size = 5.417 KB
+[14:54:27.654][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.654][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_arm64be.lua , size = 0.604 KB
+[14:54:27.655][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.655][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_arm.lua , size = 18.891 KB
+[14:54:27.667][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.667][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/v.lua , size = 5.731 KB
+[14:54:27.669][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.670][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mipsel.lua , size = 0.698 KB
+[14:54:27.670][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.670][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_x86.lua , size = 33.033 KB
+[14:54:27.696][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.696][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dump.lua , size = 20.269 KB
+[14:54:27.707][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.708][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/p.lua , size = 8.891 KB
+[14:54:27.712][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.712][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_mips64el.lua , size = 0.700 KB
+[14:54:27.713][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.713][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/jit/dis_arm64.lua , size = 29.971 KB
+[14:54:27.731][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.731][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/deprecated/health.lua , size = 1.260 KB
+[14:54:27.732][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.732][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/filetype.lua , size = 75.192 KB
+[14:54:27.765][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.766][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp.lua , size = 41.056 KB
+[14:54:27.799][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.799][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/snippet.lua , size = 21.881 KB
+[14:54:27.811][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.811][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_watch.lua , size = 9.741 KB
+[14:54:27.816][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.816][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta.lua , size = 1.016 KB
+[14:54:27.817][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.817][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/func.lua , size = 1.753 KB
+[14:54:27.818][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.818][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter.lua , size = 14.652 KB
+[14:54:27.825][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.825][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/fs.lua , size = 19.991 KB
+[14:54:27.834][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.834][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/highlight.lua , size = 5.704 KB
+[14:54:27.838][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.838][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/provider/ruby.lua , size = 1.563 KB
+[14:54:27.839][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.839][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/provider/perl.lua , size = 1.998 KB
+[14:54:27.841][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.841][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/provider/health.lua , size = 28.593 KB
+[14:54:27.854][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.854][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/provider/python.lua , size = 4.224 KB
+[14:54:27.856][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.856][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/loader.lua , size = 15.825 KB
+[14:54:27.867][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.867][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_editor.lua , size = 37.918 KB
+[14:54:27.886][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.887][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/ui/clipboard/osc52.lua , size = 2.137 KB
+[14:54:27.888][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.888][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/builtin_types.lua , size = 5.408 KB
+[14:54:27.891][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.892][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/lpeg.lua , size = 15.348 KB
+[14:54:27.897][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.897][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/json.lua , size = 1.359 KB
+[14:54:27.897][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.898][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/api_keysets.lua , size = 8.349 KB
+[14:54:27.903][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.903][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/regex.lua , size = 1.580 KB
+[14:54:27.904][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:27.905][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/options.lua , size = 328.105 KB
+[14:54:28.028][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.028][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/diff.lua , size = 2.493 KB
+[14:54:28.029][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.030][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/mpack.lua , size = 0.478 KB
+[14:54:28.030][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.030][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/api.lua , size = 105.971 KB
+[14:54:28.065][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.065][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/vvars.lua , size = 25.343 KB
+[14:54:28.073][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.073][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/builtin.lua , size = 11.225 KB
+[14:54:28.077][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.077][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/api_keysets_extra.lua , size = 4.973 KB
+[14:54:28.081][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.081][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/misc.lua , size = 0.291 KB
+[14:54:28.081][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.081][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/base64.lua , size = 0.307 KB
+[14:54:28.082][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.082][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/re.lua , size = 2.217 KB
+[14:54:28.083][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.084][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/vimfn.lua , size = 405.741 KB
+[14:54:28.242][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.242][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_meta/spell.lua , size = 0.929 KB
+[14:54:28.243][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.243][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/inspect.lua , size = 8.864 KB
+[14:54:28.248][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.248][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/filetype/options.lua , size = 2.559 KB
+[14:54:28.250][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.250][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/uri.lua , size = 3.569 KB
+[14:54:28.252][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.253][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/text.lua , size = 0.783 KB
+[14:54:28.253][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.254][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/filetype/detect.lua , size = 59.799 KB
+[14:54:28.285][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.285][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/func/_memoize.lua , size = 1.354 KB
+[14:54:28.286][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.286][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/version.lua , size = 13.708 KB
+[14:54:28.294][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.294][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/F.lua , size = 1.076 KB
+[14:54:28.295][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.295][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/provider.lua , size = 0.197 KB
+[14:54:28.296][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.296][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/glob.lua , size = 3.261 KB
+[14:54:28.298][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.298][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/diagnostic.lua , size = 72.462 KB
+[14:54:28.339][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.339][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/shared.lua , size = 37.258 KB
+[14:54:28.361][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.361][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/iter.lua , size = 25.863 KB
+[14:54:28.376][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.376][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/health.lua , size = 12.767 KB
+[14:54:28.382][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.382][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/keymap.lua , size = 3.624 KB
+[14:54:28.385][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.385][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/secure.lua , size = 5.043 KB
+[14:54:28.388][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.388][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_defaults.lua , size = 26.367 KB
+[14:54:28.402][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.402][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_options.lua , size = 25.297 KB
+[14:54:28.413][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.413][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_comment.lua , size = 8.562 KB
+[14:54:28.418][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.418][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/termcap.lua , size = 3.103 KB
+[14:54:28.420][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.420][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_init_packages.lua , size = 3.023 KB
+[14:54:28.422][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.422][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_system.lua , size = 9.135 KB
+[14:54:28.429][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.429][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/health/health.lua , size = 12.696 KB
+[14:54:28.436][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.436][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/re.lua , size = 6.495 KB
+[14:54:28.441][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.441][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/dev.lua , size = 20.469 KB
+[14:54:28.453][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.453][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/languagetree.lua , size = 32.823 KB
+[14:54:28.471][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.472][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/language.lua , size = 5.125 KB
+[14:54:28.474][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.477][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_range.lua , size = 3.923 KB
+[14:54:28.481][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.481][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_meta/misc.lua , size = 2.495 KB
+[14:54:28.483][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.483][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_meta/tsnode.lua , size = 5.981 KB
+[14:54:28.487][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.487][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_meta/tstree.lua , size = 1.234 KB
+[14:54:28.488][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.488][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_query_linter.lua , size = 7.700 KB
+[14:54:28.493][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.493][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/health.lua , size = 0.989 KB
+[14:54:28.494][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.494][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/query.lua , size = 31.771 KB
+[14:54:28.590][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.590][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/_fold.lua , size = 14.430 KB
+[14:54:28.597][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.600][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/treesitter/highlighter.lua , size = 11.807 KB
+[14:54:28.607][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.607][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/_inspector.lua , size = 7.518 KB
+[14:54:28.612][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.612][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/buf.lua , size = 32.057 KB
+[14:54:28.628][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.628][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_meta.lua , size = 0.440 KB
+[14:54:28.629][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.629][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/client.lua , size = 38.034 KB
+[14:54:28.647][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.647][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/completion.lua , size = 22.663 KB
+[14:54:28.659][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.659][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_snippet_grammar.lua , size = 6.179 KB
+[14:54:28.663][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.664][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/handlers.lua , size = 26.850 KB
+[14:54:28.676][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.677][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/codelens.lua , size = 9.336 KB
+[14:54:28.682][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.683][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_watchfiles.lua , size = 6.893 KB
+[14:54:28.686][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.686][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/log.lua , size = 4.695 KB
+[14:54:28.689][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.689][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_meta/protocol.lua , size = 182.005 KB
+[14:54:28.743][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.744][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/diagnostic.lua , size = 14.132 KB
+[14:54:28.751][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.751][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/health.lua , size = 5.412 KB
+[14:54:28.755][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.755][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_tagfunc.lua , size = 2.787 KB
+[14:54:28.757][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.757][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/protocol.lua , size = 36.793 KB
+[14:54:28.765][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.765][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/rpc.lua , size = 26.228 KB
+[14:54:28.779][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.779][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_dynamic.lua , size = 2.922 KB
+[14:54:28.781][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.782][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/inlay_hint.lua , size = 12.187 KB
+[14:54:28.788][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.789][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/_changetracking.lua , size = 11.492 KB
+[14:54:28.795][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.795][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/util.lua , size = 75.569 KB
+[14:54:28.833][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.834][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/sync.lua , size = 16.744 KB
+[14:54:28.841][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.841][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/lsp/semantic_tokens.lua , size = 26.599 KB
+[14:54:28.853][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.854][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/ui.lua , size = 7.497 KB
+[14:54:28.858][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.858][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/vim/vimhelp.lua , size = 2.286 KB
+[14:54:28.860][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.860][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/coxpcall.lua , size = 3.451 KB
+[14:54:28.862][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.862][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua/tohtml.lua , size = 43.129 KB
+[14:54:28.888][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/yanfenggao/tools/nvim-linux64/share/nvim/runtime/lua
+[14:54:28.888][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/minimal.lua , size = 1.101 KB
+[14:54:28.889][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/sequential/common_spec.lua , size = 3.526 KB
+[14:54:28.892][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/parallel/logger_spec.lua , size = 2.950 KB
+[14:54:28.894][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/parallel/utils_spec.lua , size = 6.090 KB
+[14:54:28.897][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/sample/init.lua , size = 0.558 KB
+[14:54:28.898][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/tests/helpers.lua , size = 0.480 KB
+[14:54:29.000][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [1.470] sec: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:29.000][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:29.000][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:29.000][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim
+[14:54:29.039][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/didOpen] takes [1.606]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua",
+      version = 0
+    }
+  }
+}
+[14:54:29.044][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim], files count:[150]
+[14:54:29.045][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/documentHighlight] takes [1.607]sec. {
+  id = 6,
+  jsonrpc = "2.0",
+  method = "textDocument/documentHighlight",
+  params = {
+    position = {
+      character = 0,
+      line = 0
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.082][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/semanticTokens/full] takes [1.583]sec. {
+  id = 17,
+  jsonrpc = "2.0",
+  method = "textDocument/semanticTokens/full",
+  params = {
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.097][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.592]sec. {
+  id = 8,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.097][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.591]sec. {
+  id = 10,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.098][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.592]sec. {
+  id = 12,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.098][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.592]sec. {
+  id = 14,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.098][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.592]sec. {
+  id = 16,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.098][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.592]sec. {
+  id = 18,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 104
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.105][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/documentSymbol] takes [1.656]sec. {
+  id = 5,
+  jsonrpc = "2.0",
+  method = "textDocument/documentSymbol",
+  params = {
+    textDocument = {
+      uri = "file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim/lua/symbol-usage/langs.lua"
+    }
+  }
+}
+[14:54:29.438][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/yanfenggao/.local/share/nvim/depends/symbol-usage.nvim] finished, takes [0.242] sec.
+[14:54:40.713][warn] [#0:script/pub/report.lua:24]: Load proto error:	Disconnected!

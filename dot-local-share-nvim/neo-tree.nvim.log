@@ -1,0 +1,43 @@
+[INFO  2024年10月18日 星期五 16时53分05秒] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  2024年10月18日 星期五 16时53分25秒] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  2024年10月18日 星期五 16时53分28秒] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  2024年10月18日 星期五 16时53分51秒] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  2024年10月18日 星期五 16时53分51秒] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[ERROR 2024年10月22日 星期二 15时44分19秒] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  hijack_netrw_1000  error:  ...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:169: Error executing lua: ...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:170: Vim(split):E11: Invalid in command-line window; <CR> executes, CTRL-C quits: silent noswapfile vertical topleft 40split
+stack traceback:
+	[C]: in function 'nvim_command'
+	...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:170: in function <...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:169>
+	[C]: in function 'nvim_win_call'
+	...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:169: in function '_open_window'
+	...o/.local/share/nvim/lazy/nui.nvim/lua/nui/split/init.lua:257: in function 'mount'
+	...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1018: in function 'acquire_window'
+	...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:546: in function 'get_items'
+	...y/neo-tree.nvim/lua/neo-tree/sources/filesystem/init.lua:150: in function '_navigate_internal'
+	...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/netrw.lua:97: in function <...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/netrw.lua:53>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:126: in function 'debounce'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:71: in function ''
+	vim/_editor.lua: in function ''
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+[INFO  2024年10月29日 星期二 15时02分47秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年10月29日 星期二 15时47分55秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:220: Copied CCC.txt to clipboard
+[INFO  2024年10月29日 星期二 15时49分09秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:254: Cut AAA.txt to clipboard
+[INFO  2024年11月06日 星期三 20时12分55秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:220: Copied neo-tree.lua to clipboard
+[INFO  2024年11月06日 星期三 20时14分51秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:220: Copied neo-tree.lua to clipboard
+[INFO  2024年11月06日 星期三 20时15分24秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:254: Cut neo-tree.lua to clipboard
+[INFO  2024年11月06日 星期三 20时50分05秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年11月06日 星期三 20时50分07秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: false
+[INFO  2024年11月06日 星期三 20时50分08秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年11月06日 星期三 20时50分09秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: false
+[INFO  2024年11月07日 星期四 15时14分51秒] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed supertab.luaa successfully
+[INFO  2024年11月07日 星期四 15时49分22秒] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed supertab.lua successfully
+[INFO  2024年11月09日 星期六 13时45分37秒] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:220: Copied Makefile to clipboard
+[INFO  2024年11月09日 星期六 14时55分29秒] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed zt9799_drv.c successfully
+[INFO  2024年11月14日 星期四 10时21分57秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年11月14日 星期四 10时24分45秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: false
+[INFO  2024年11月14日 星期四 10时27分10秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年12月19日 星期四 17时36分04秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年12月19日 星期四 20时02分58秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2024年12月23日 星期一 11时20分32秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2025年01月14日 星期二 10时18分15秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: true
+[INFO  2025年01月14日 星期二 10时18分16秒] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:245: Toggling hidden files: false

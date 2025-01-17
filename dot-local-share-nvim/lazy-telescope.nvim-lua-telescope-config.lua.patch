@@ -1,0 +1,13 @@
+diff --git a/lua/telescope/config.lua b/lua/telescope/config.lua
+index 7161416..0ab97ef 100644
+--- a/lua/telescope/config.lua
++++ b/lua/telescope/config.lua
+@@ -706,7 +706,7 @@ append(
+ 
+ append(
+   "vimgrep_arguments",
+-  { "rg", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case" },
++  { "rg", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case", "-g", "!*.{o,png,d}", "-g", "!{.git,.cache,.repo,prebuilts}","--no-ignore-vcs" },
+   [[
+     Defines the command that will be used for `live_grep` and `grep_string`
+     pickers.

@@ -1,0 +1,1 @@
+{"metrics":{"completion_time":1729476561476,"start_time":1729476513168},"secondary_sources":[],"schema_version":"1.1","name":"debugpy","links":{"bin":{"debugpy":"debugpy","debugpy-adapter":"debugpy-adapter"},"opt":{},"share":{}},"primary_source":{"type":"registry+v1","id":"pkg:pypi\/debugpy@1.8.7"}}

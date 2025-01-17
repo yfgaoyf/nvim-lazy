@@ -1,0 +1,26 @@
+diff --git a/lua/neo-tree/defaults.lua b/lua/neo-tree/defaults.lua
+index cbd30c7..742591e 100644
+--- a/lua/neo-tree/defaults.lua
++++ b/lua/neo-tree/defaults.lua
+@@ -487,6 +487,7 @@ local config = {
+       },
+       always_show = { -- remains visible even if other settings would normally hide it
+         --".gitignored",
++        'out'
+       },
+       always_show_by_pattern = { -- uses glob style patterns
+         --".env*",
+@@ -494,9 +495,13 @@ local config = {
+       never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+         --".DS_Store",
+         --"thumbs.db"
++        'lib'
+       },
+       never_show_by_pattern = { -- uses glob style patterns
+         --".null-ls_*",
++        "*.xml",
++        "*.gz",
++        "*.log"
+       },
+     },
+     find_by_full_path_words = false,  -- `false` means it only searches the tail of a path.

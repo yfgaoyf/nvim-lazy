@@ -1,0 +1,1 @@
+{"name":"cpptools","metrics":{"start_time":1729477862185,"completion_time":1729478840359},"links":{"share":{},"bin":{"OpenDebugAD7":"extension\/debugAdapters\/bin\/OpenDebugAD7"},"opt":{}},"secondary_sources":[],"schema_version":"1.1","primary_source":{"type":"registry+v1","id":"pkg:github\/microsoft\/vscode-cpptools@v1.21.6"}}
