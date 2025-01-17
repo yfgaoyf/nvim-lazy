@@ -1,0 +1,7 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+-- local remap = vim.api.nvim_set_keymap
+-- vim.api.nvim_set_keymap("i", "<expr><TAB>", 'pumvisible() ? "<C-n>" : "<TAB>"', opts)
+-- remap('i', '<tab>', [[pumvisible() ? "<C-n>" : "<C-n>"]], { expr = true, noremap = true })
+-- remap('i', '<s-tab>', [[pumvisible() ? "<C-p>" : "<C-p>"]], { expr = true, noremap = true })
