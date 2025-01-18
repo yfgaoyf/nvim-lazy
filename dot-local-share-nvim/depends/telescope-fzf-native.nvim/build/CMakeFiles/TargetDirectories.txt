@@ -1,7 +1,0 @@
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/install/strip.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/install/local.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/install.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/list_install_components.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/rebuild_cache.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/edit_cache.dir
-/home/yanfenggao/.local/share/nvim/depends/telescope-fzf-native.nvim/build/CMakeFiles/fzf.dir
