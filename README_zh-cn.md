@@ -6,6 +6,9 @@
 
 1. ubuntu 20+（主要依赖GLIBC v28+）
 2. x86-64系统
+3. Git >= 2.19.0
+4. Nerd Font(v3.0 or greater)
+5. terminal for supporting OSC52(`WindTerm`, `WezTerm`, `iTerm2`, etc.)
 
 ## 目录结构介绍
 
