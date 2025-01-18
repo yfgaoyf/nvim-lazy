@@ -1,6 +1,0 @@
- M lua/telescope/config.lua
-/home/p-gaoyanfeng/.local/share/nvim/lazy/telescope.nvim
- M lua/neo-tree/defaults.lua
-/home/p-gaoyanfeng/.local/share/nvim/lazy/neo-tree.nvim
- M lua/lazyvim/plugins/extras/editor/telescope.lua
-/home/p-gaoyanfeng/.local/share/nvim/lazy/LazyVim
