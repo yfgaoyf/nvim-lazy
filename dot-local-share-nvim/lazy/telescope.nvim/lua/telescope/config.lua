@@ -706,7 +706,7 @@ append(
 
 append(
   "vimgrep_arguments",
-  { "rg", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case", "-g", "!*.{o,png,d}", "-g", "!{.git,.cache,.repo,prebuilts}","--no-ignore-vcs" },
+  { "rg", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case", "-g", "!*.{o,png,d,map,lst,json}", "-g", "!{.git,.cache,.repo,prebuilts,best1306,best1306p,best1502p,best1502x,best1600,best2003,best2009,best3601,best1305_ibrt,best1306p_ep,best1502p_ep,best1503_ep,best1600_ep,best1605_ep,best2001_ep,best2005_ep,best3601_ep,best1306_ep,best1501p_ep,best1502x_ep,best1503p_ep,best1600_ibrt,best2003_ep,best2009_ep,besa64,besa7,beshifi4}","--no-ignore-vcs"  },
   [[
     Defines the command that will be used for `live_grep` and `grep_string`
     pickers.

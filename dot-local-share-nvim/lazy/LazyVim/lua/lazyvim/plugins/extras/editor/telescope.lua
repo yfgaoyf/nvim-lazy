@@ -168,7 +168,7 @@ return {
       local function find_command()
         if 1 == vim.fn.executable("rg") then
           -- return { "rg", "--files", "--color", "never", "-g", "!*.o", "-g","!*.png","-g", "!*prebuilts*", "-g", "!.git", "-g", "!.cache","--no-ignore-vcs" }
-          return { "rg", "--files", "--color", "never", "-g", "!*.{png,o,der,d}","-g", "!{prebuilts,.git,.cache,.repo,.gitignore}","--no-ignore-vcs" }
+          return { "rg", "--files", "--color", "never", "-g", "!*.{png,o,der,d}","-g", "!{prebuilts,.git,.cache,.repo,.gitignore,best1306,best1306p,best1502p,best1502x,best1600,best2003,best2009,best3601,besa64,besa7,beshifi4}","--no-ignore-vcs" }
         elseif 1 == vim.fn.executable("fd") then
           return { "fd", "--type", "f", "--color", "never", "-E", ".git", "-E", ".cache" , "--no-ignore-vcs"}
         elseif 1 == vim.fn.executable("fdfind") then

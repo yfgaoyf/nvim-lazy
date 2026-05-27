@@ -84,6 +84,7 @@ return {
             "--completion-style=detailed",
             "--function-arg-placeholders",
             "--fallback-style=llvm",
+            "--query-driver=/**/arm-none-eabi-g*,/**/bin/g*",
           },
           init_options = {
             usePlaceholders = true,
